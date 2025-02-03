@@ -29,6 +29,8 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 -addext "subjectAltName=DNS:domain.lokal,DNS:*.domain.lokal,IP:192.168.17.248,IP:172.27.170.106"
 ```
 
+---
+
 ### Install Domain pada Server & Client
 
 ```
@@ -38,6 +40,8 @@ sudo update-ca-certificates
 ```
 
 ###### Perintah diatas juga bisa kamu aplikasikan pada sisi client, namun umumnya pada client cuma install melalui aplikasi browser yang digunakan (tidak menginstalnya langsung pada sistem)
+
+---
 
 ### Konfigurasi Nginx
 
@@ -93,6 +97,8 @@ server {
 }
 ```
 
+---
+
 ### Install SSL di Chrome
 
 ![Preview](img/install-ssl-chrome-1.png)
@@ -101,6 +107,8 @@ server {
 ![Preview](img/install-ssl-chrome-4.png)
 ![Preview](img/install-ssl-chrome-5.png)
 ![Preview](img/install-ssl-chrome-6.png)
+
+---
 
 ### Pembuktian
 
